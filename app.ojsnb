@@ -1,0 +1,20 @@
+{
+    "id": "178d9911-77ce-4b21-b527-45ea1a0b4047",
+    "files": [],
+    "nodes": [
+        {
+            "id": "tmp-0",
+            "name": "",
+            "value": "function sum(a, b ,c ,d){\r\n    let sumOfAll = a + b + c + d;\r\n    console.log(sumOfAll);\r\n}\r\n\r\nconst num = [1, 2, 3, 4];\r\nsum(...num);\r\n",
+            "mode": "js",
+            "outputs": []
+        },
+        {
+            "id": "tmp-0",
+            "name": "",
+            "value": "\r\n",
+            "mode": "js",
+            "outputs": []
+        }
+    ]
+}
