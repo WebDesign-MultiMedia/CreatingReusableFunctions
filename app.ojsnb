@@ -5,12 +5,19 @@
         {
             "id": "tmp-0",
             "name": "",
-            "value": "function sum(a, b ,c ,d){\r\n    let sumOfAll = a + b + c + d;\r\n    console.log(sumOfAll);\r\n}\r\n\r\nconst num = [1, 2, 3, 4];\r\nsum(...num);\r\n",
+            "value": "\r\nfunction longestString(txt1, txt2, txt3, txt4){\r\n    let long = txt.sort(function(txt1, txt2){\r\n        return txt1.length - txt2.length;\r\n    })\r\n}\r\nconst txt = [\"Hello something\", \r\n            \"Bye someone\", \r\n            \"Adios Evryone\", \r\n            \"Hola Everyone\"].sort();\r\nlongestString(...txt);",
             "mode": "js",
             "outputs": []
         },
         {
             "id": "tmp-0",
+            "name": "",
+            "value": "",
+            "mode": "js",
+            "outputs": []
+        },
+        {
+            "id": "tmp-1",
             "name": "",
             "value": "\r\n",
             "mode": "js",

@@ -43,7 +43,34 @@ let txt = ["John", "BatMan", "NYC", "TheBronxNY"];
 longestString(...txt)
 
 
+// return an array of strings that are longer thn the given number
+    
+    function stringsLongerThan(str){
 
+        let words = str;
+            words.forEach(value => {
+                if(value.length >=5){
+
+                    console.log(value); //output 'hello' and 'morning'
+                }
+            });
+    }
+    let str = ['say', 'hello', 'in',  'the',  'morning']
+    stringsLongerThan(str)
+
+
+    //Take a number, n, and print every number between 1 and n without using loops. Use recursion.
+        
+    function count(numero){
+        let ero = numero
+        if(ero < 1){
+            return;
+        }
+        count(numero - 1)
+        console.log(numero);
+    }
+    const numero = [29];
+    count(...numero);
 
 
 
