@@ -3,6 +3,9 @@
 //  Implement Array object methods.
 
 
+
+// PART ONE
+
 // Take an array of numbers and return the sum.
 function sum(a, b ,c ,d){
     let sumOfAll = a + b + c +d;
@@ -75,11 +78,55 @@ longestString(...txt)
 
 
 
+    // PART TWO
+
+
+    // Sort the array by age.
+    function sortedByAge(info){
+        let byAge = info;
+
+        byAge.sort(function(a, b){
+            return a.age - b.age; // Sorted by Age
+        })
+
+        console.log("Sorted by age: 18 and up!", byAge)
+
+
+    }
+
+    // Unsorted
+    const info = [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+ { id: "48", name: "Barry", occupation: "Runner", age: "25" },
+ { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+ { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+ { id: "7", name: "Bilbo", occupation: "None", age: "111" }]
+
+ sortedByAge(info);
+
+
+ // Filter the array to remove entries 
+    //with an age greater than 50
+
+function greaterthan(){
+    let ageAndUp = infoTwo;
+
+    const poeple = ageAndUp.filter(someone => someone.age < 50);
+    console.log("Removed ages greater than 50", poeple);
+
+
+}
+
+    const infoTwo = [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+ { id: "48", name: "Barry", occupation: "Runner", age: "25" },
+ { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+ { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+ { id: "7", name: "Bilbo", occupation: "None", age: "111" }];
+    greaterthan(infoTwo);   
 
 
 
-
-
+// Map the array to change the "occupation" key to "job"
+//and increment every age by 1.
 
 
 /**
