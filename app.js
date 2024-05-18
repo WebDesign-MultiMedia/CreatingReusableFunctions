@@ -128,6 +128,32 @@ function greaterthan(){
 // Map the array to change the "occupation" key to "job"
 //and increment every age by 1.
 
+function jobField(employeeInfo){
+
+    let  change =  employeeInfo.map(employeeInfo => {
+        const {occupation, age, ...rest} = employeeInfo;
+        return{
+            ...rest, 
+            job: occupation,
+            age: age - 1 + 2,
+        }
+    })  
+      console.log("Changed occupation to job and a incremnt to age",  change);
+}
+const theField = [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+ { id: "48", name: "Barry", occupation: "Runner", age: "25" },
+ { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+ { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+ { id: "7", name: "Bilbo", occupation: "None", age: "111" }];
+jobField(theField)
+
+
+
+
+
+
+
+
 
 /**
  * Any of the examples below will accomplish the
@@ -160,7 +186,8 @@ function reverseString(str) {
     else return reverseString4(str.substr(1)) + str.charAt(0);
   }
   
-  function reverseString5(str) {
+  function console.log(theField);
+ reverseString5(str) {
     return (str === "") ? "" : reverseString5(str.substr(1)) + str.charAt(0);
   }
   
